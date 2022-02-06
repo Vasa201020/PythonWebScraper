@@ -1,6 +1,5 @@
 from bs4 import BeautifulSoup
 import requests
-import turtle
 import time
 import re
 
@@ -33,9 +32,7 @@ for y in range(len(konacni)):
 		naslov = doc.find("h1", {"class": "product-detail-info__header-name"})
 		print(naslov.string + " " + cena.string)
 	except:
-		tag2 = doc.find_all("a")
-
-			#print(naslov.string + " " + cena.string)
+		time.sleep(0.1)
 		#print("ERROR CODE:  404")
 
 
