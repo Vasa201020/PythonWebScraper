@@ -1,0 +1,3 @@
+from ScraperModule import *
+
+Scraper()
